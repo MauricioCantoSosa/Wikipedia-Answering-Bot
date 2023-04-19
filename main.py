@@ -10,9 +10,9 @@ import requests
 import pinecone
 import os
 
-os.environ['OPENAI_API_KEY'] = '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'
-os.environ['PINECONE_API_KEY'] = 'cdc32a3a-e280-4633-80e8-6556bdcab127'
-os.environ['PINECONE_API_ENV'] = 'us-central1-gcp'
+os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
+os.environ['PINECONE_API_KEY'] = st.secrets['PINECONE_API_KEY']
+os.environ['PINECONE_API_ENV'] = st.secrets['PINECONE_API_ENV']
 
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
 PINECONE_API_KEY = os.environ.get("PINECONE_API_KEY")
