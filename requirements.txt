@@ -3,3 +3,4 @@ streamlit
 tiktoken
 pinecone-client
 streamlit_chat
+openai
